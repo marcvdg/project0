@@ -1,0 +1,81 @@
+// 2 variable definitions
+$logo: Merriweather, Georgia, "Times New Roman", serif;
+$mustard: #FCD652;
+
+// Nested styles, resulting in descendant selector
+.navbar {
+    .nav-item {
+        margin-left: 0.2em; 
+        margin-right: 0.2em;   
+    }
+}
+
+// Descendant selector
+a small.imgcaption {
+    float: right;
+    padding-right: 20px;
+}
+
+// Child selector
+#introtext > h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+    margin-bottom: 0.5em;
+}
+
+// Adjacent sibling selector
+p + ul {
+    padding-inline-start: 20px;
+}
+
+// Normal class selectors
+.btn-ggc {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+// SCSS inheritance
+.quote {
+    max-width: 50%;
+    padding-left: 1em;
+    border-left: 1px solid gray;
+    font-family: $logo;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.quote-attr {
+    @extend .quote;
+    font-size: 1em;
+    text-align: right;
+    padding-top: 5px;
+}
+
+// Two styles that use variables
+#sitelogo {
+    font-family: $logo;
+}
+
+// Double class selector
+.btn.cta-btn {
+    background-color: $mustard;
+    color: #212529;
+    font-weight: bolder;
+}
+
+//Pseudo-class selector for hover effect the CTA button
+.btn.cta-btn:hover {
+    background-color: white;
+    color: #212529;
+    font-weight: bolder;
+    transition-duration: 0.1s;
+}
+
+// Media query to improve button placement in hamburger menu
+@media only screen and (max-width: 992px) {
+    .cta-btn {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }

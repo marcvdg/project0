@@ -1,0 +1,67 @@
+.navbar .nav-item {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+a small.imgcaption {
+  float: right;
+  padding-right: 20px;
+}
+
+#introtext > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 4.5rem;
+  margin-bottom: 0.5em;
+}
+
+p + ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.btn-ggc {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.quote, .quote-attr {
+  max-width: 50%;
+  padding-left: 1em;
+  border-left: 1px solid gray;
+  font-family: Merriweather, Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.quote-attr {
+  font-size: 1em;
+  text-align: right;
+  padding-top: 5px;
+}
+
+#sitelogo {
+  font-family: Merriweather, Georgia, "Times New Roman", serif;
+}
+
+.btn.cta-btn {
+  background-color: #FCD652;
+  color: #212529;
+  font-weight: bolder;
+}
+
+.btn.cta-btn:hover {
+  background-color: white;
+  color: #212529;
+  font-weight: bolder;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+@media only screen and (max-width: 992px) {
+  .cta-btn {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
